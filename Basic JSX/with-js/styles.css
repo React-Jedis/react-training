@@ -1,0 +1,102 @@
+:root {
+  --main: #162447;
+  --sub: #1f4068;
+  --important: #1b1b2f;
+  --contrast: #e43f5a;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: var(--contrast);
+}
+
+header {
+  background-color: var(--important);
+  color: var(--contrast);
+  padding: 20px 12px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding: 20px 12px;
+  flex-grow: 1;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.actions {
+  margin: auto;
+  text-align: center;
+  padding: 12px 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--contrast);
+  background-color: var(--important);
+  padding: 8px 10px;
+  color: var(--contrast);
+  font-family: 'Roboto';
+}
+
+button:hover {
+  color: var(--important);
+  background-color: var(--contrast);
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--sub);
+  border: 1px solid var(--important);
+  color: var(--contrast);
+}
+
+.remove-icon {
+  border: 1px solid var(--contrast);
+  border-radius: 50%;
+  padding: 2px 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.remove-icon:hover {
+  color: var(--important);
+  background-color: var(--contrast);
+}
+
+footer {
+  background-color: black;
+  color: var(--contrast);
+  padding: 15px 12px;
+  text-align: right;
+}
